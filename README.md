@@ -57,9 +57,8 @@ Os _outputs_ das execuções dos algoritmos aparecerão no terminal. Caso queira
 Para testar, por exemplo, o algoritmo na versão **paralelizada e com flag de otimização**:
 
 ```
+cd src
 g++ -O3 maxSumSub_par.cpp energia.c -o testParOpt -fopenmp
-# setando o número de threads para 4
 export OMP_NUM_THREADS=4 
-# usando a entrada de tamanho n = 40000
 ./testParOpt < ../inputFiles/elem_40k.in
 ```
