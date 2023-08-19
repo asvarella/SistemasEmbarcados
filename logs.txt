@@ -1,0 +1,95 @@
+### TRABALHO 2 SISTEMAS EMBARCADOS ###
+### Executando testes sequenciais ### 
+ 
+
+### Caso 1: Sequencial s/ otimizacao ### 
+
+Resultado para 40k elementos:
+Energia consumida em Joules:	840.935
+Tempo em segundos:	69.7145
+
+
+Resultado para 60k elementos:
+Energia consumida em Joules:	2997.44
+Tempo em segundos:	265.009
+
+
+Resultado para 90k elementos:
+Energia consumida em Joules:	9930.98
+Tempo em segundos:	879.287
+
+
+Resultado para 100k elementos:
+Energia consumida em Joules:	13028
+Tempo em segundos:	1150.21
+
+
+### Caso 2: Sequencial c/ otimizacao ### 
+
+Resultado para 40k elementos:
+Energia consumida em Joules:	128.465
+Tempo em segundos:	13.0007
+
+
+Resultado para 60k elementos:
+Energia consumida em Joules:	590.876
+Tempo em segundos:	56.6354
+
+
+Resultado para 90k elementos:
+Energia consumida em Joules:	2405.28
+Tempo em segundos:	229.534
+
+
+Resultado para 100k elementos:
+Energia consumida em Joules:	3571.89
+Tempo em segundos:	331.166
+
+
+### Executando testes paralelos ### 
+ 
+
+### Caso 1: Paralelizado s/ otimizacao ### 
+
+Resultado para 40k elementos:
+Energia consumida em Joules:	476.274
+Tempo em segundos:	30.3173
+
+
+Resultado para 60k elementos:
+Energia consumida em Joules:	1829.91
+Tempo em segundos:	115.219
+
+
+Resultado para 90k elementos:
+Energia consumida em Joules:	6041.13
+Tempo em segundos:	376.483
+
+
+Resultado para 100k elementos:
+Energia consumida em Joules:	8328.09
+Tempo em segundos:	515.178
+
+
+### Caso 2: Paralelizado c/ otimizacao ### 
+
+Resultado para 40k elementos:
+Energia consumida em Joules:	80.536
+Tempo em segundos:	5.20434
+
+
+Resultado para 60k elementos:
+Energia consumida em Joules:	360.879
+Tempo em segundos:	22.583
+
+
+Resultado para 90k elementos:
+Energia consumida em Joules:	1481.48
+Tempo em segundos:	92.7684
+
+
+Resultado para 100k elementos:
+Energia consumida em Joules:	2099.44
+Tempo em segundos:	133.043
+
+
