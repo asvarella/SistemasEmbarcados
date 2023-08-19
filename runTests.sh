@@ -10,46 +10,91 @@ g++ maxSumSub_seq.cpp energia.c -o testParNaoOpt -fopenmp
 g++ -O3 maxSumSub_seq.cpp energia.c -o testParOpt -fopenmp
 
 
-echo -e "### Executando testes sequenciais ### \n \n"
+# ===================== SEQUENCIAIS SEM OTIMIZACAO =====================
 
-echo -e "### Codigo 1: Sequencial s/ otimizacao ### \n"
+echo -e "### Executando testes sequenciais ### \n \n"
+echo -e "### Caso 1: Sequencial s/ otimizacao ### \n"
 
 export OMP_NUM_THREADS=1
 
+
 echo "Resultado para 40k elementos:"
 ./testSeqNaoOpt < ../inputFiles/elem_40k.in
-echo -e "\n"
-
-#debug
-echo "numero de threads eh "
-echo $OMP_NUM_THREADS
 echo -e "\n"
 
 echo "Resultado para 60k elementos:"
 ./testSeqNaoOpt < ../inputFiles/elem_60k.in
 echo -e "\n"
 
-#debug
-echo "numero de threads eh "
-echo $OMP_NUM_THREADS
-echo -e "\n"
-
 echo "Resultado para 90k elementos:"
 ./testSeqNaoOpt < ../inputFiles/elem_90k.in
-echo -e "\n"
-
-#debug
-echo "numero de threads eh "
-echo $OMP_NUM_THREADS
 echo -e "\n"
 
 echo "Resultado para 100k elementos:"
 ./testSeqNaoOpt < ../inputFiles/elem_100k.in
 echo -e "\n"
 
-#debug
-echo "numero de threads eh "
-echo $OMP_NUM_THREADS
+# ===================== SEQUENCIAIS COM OTIMIZACAO =====================
+
+echo -e "### Caso 2: Sequencial c/ otimizacao ### \n"
+
+echo "Resultado para 40k elementos:"
+./testSeqOpt < ../inputFiles/elem_40k.in
+echo -e "\n"
+
+echo "Resultado para 60k elementos:"
+./testSeqOpt < ../inputFiles/elem_60k.in
+echo -e "\n"
+
+echo "Resultado para 90k elementos:"
+./testSeqOpt < ../inputFiles/elem_90k.in
+echo -e "\n"
+
+echo "Resultado para 100k elementos:"
+./testSeqOpt < ../inputFiles/elem_100k.in
+echo -e "\n"
+
+# ===================== PARALELOS SEM OTIMIZACAO =====================
+
+echo -e "### Executando testes paralelos ### \n \n"
+echo -e "### Caso 1: Paralelizado s/ otimizacao ### \n"
+
+export OMP_NUM_THREADS=4
+
+echo "Resultado para 40k elementos:"
+./testParNaoOpt < ../inputFiles/elem_40k.in
+echo -e "\n"
+
+echo "Resultado para 60k elementos:"
+./testParNaoOpt < ../inputFiles/elem_60k.in
+echo -e "\n"
+
+echo "Resultado para 90k elementos:"
+./testParNaoOpt < ../inputFiles/elem_90k.in
+echo -e "\n"
+
+echo "Resultado para 100k elementos:"
+./testParNaoOpt < ../inputFiles/elem_100k.in
+echo -e "\n"
+
+# ===================== PARALELOS COM OTIMIZACAO =====================
+echo -e "### Caso 2: Paralelizado c/ otimizacao ### \n"
+
+
+echo "Resultado para 40k elementos:"
+./testParOpt < ../inputFiles/elem_40k.in
+echo -e "\n"
+
+echo "Resultado para 60k elementos:"
+./testParOpt < ../inputFiles/elem_60k.in
+echo -e "\n"
+
+echo "Resultado para 90k elementos:"
+./testParOpt < ../inputFiles/elem_90k.in
+echo -e "\n"
+
+echo "Resultado para 100k elementos:"
+./testParOpt < ../inputFiles/elem_100k.in
 echo -e "\n"
 
 
