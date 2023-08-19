@@ -64,8 +64,8 @@ int main()
     double finish = omp_get_wtime();
 
 	//print energy and total time elapsed
-    cout << energy << "\n";
-    cout << finish-start << "\n";
+    cout << "Energia consumida em Joules:\t" << energy << "\n";
+    cout << "Tempo em segundos:\t" << finish-start << "\n";
 
     return 0;
 } 
