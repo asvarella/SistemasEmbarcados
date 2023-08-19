@@ -6,8 +6,8 @@ cd src
 
 g++ maxSumSub_seq.cpp energia.c -o testSeqNaoOpt -fopenmp
 g++ -O3 maxSumSub_seq.cpp energia.c -o testSeqOpt -fopenmp
-g++ maxSumSub_seq.cpp energia.c -o testParNaoOpt -fopenmp
-g++ -O3 maxSumSub_seq.cpp energia.c -o testParOpt -fopenmp
+g++ maxSumSub_par.cpp energia.c -o testParNaoOpt -fopenmp
+g++ -O3 maxSumSub_par.cpp energia.c -o testParOpt -fopenmp
 
 
 # ===================== SEQUENCIAIS SEM OTIMIZACAO =====================
